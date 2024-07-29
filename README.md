@@ -1,6 +1,6 @@
 # Jarvis_app
 
-ARVIS - Your Personal Assistant
+JARVIS - Your Personal Assistant
 Overview
 JARVIS is a voice-controlled personal assistant application built using Python. It leverages various libraries to provide a range of functionalities. The application can perform web searches, tell jokes, provide the current time, set reminders, and much more.
 
@@ -23,42 +23,107 @@ Reminders: Sets reminders with a specified message.
 Open Source: Ongoing development with open-source contributions.
 
 
-Voice Commands and Corresponding Actions
-1. Search Command
 
-Trigger: "search <query>"
-Example: If you say "search Python programming", the application will open Google and search for "Python programming".
-Code Handling: The text is parsed to extract the query, which is then used to construct a Google search URL.
-2. YouTube Command
+Voice Commands and Their Tasks
 
-Trigger: "open YouTube" or "open youtube"
-Example: If you say "open YouTube", the application will open YouTube in the default web browser.
-Code Handling: Opens the YouTube website.
-3. Time Command
+Search for Something on Google
 
-Trigger: "time"
-Example: If you say "what time is it", the application will respond with the current time.
-Code Handling: Retrieves the current time using the datetime module and speaks it out.
-4. Joke Command
+Command: "search <query>"
 
-Trigger: "tell me a joke"
-Example: If you say "tell me a joke", the application will respond with a random joke.
-Code Handling: Fetches a random joke using the pyjokes library and speaks it out.
-5. Reminder Command
+Example: "search Python programming"
 
-Trigger: "set reminder"
-Example: If you say "set a reminder", the application sets a reminder for 10 seconds (hardcoded) and then speaks the reminder message.
-Code Handling: Uses threading to wait for the specified time and then speaks the reminder message.
-6. Exit Command
+Action: Opens Google and searches for the specified query.
 
-Trigger: "exit" or "quit"
-Example: If you say "exit" or "quit", the application will terminate.
-Code Handling: Exits the application by calling exit().
-7. Default Response
+Open YouTube
 
-Trigger: Any command that does not match the predefined commands.
-Example: If you say "play music", which is not a defined command, the application will respond with "I don't know how to respond to that."
-Code Handling: Provides a default response for unrecognized commands.
+
+Command: "open YouTube" or "open youtube"
+
+Example: "open YouTube"
+
+Action: Opens the YouTube website in the default web browser.
+
+
+Get the Current Time
+
+Command: "time"
+
+Example: "what time is it"
+
+Action: Provides the current time.
+
+
+Tell a Joke
+
+Command: "tell me a joke"
+
+Example: "tell me a joke"
+
+Action: Delivers a random joke.
+
+
+Set a Reminder
+
+Command: "set reminder"
+
+Example: "set a reminder"
+
+Action: Sets a reminder with a default message after a specified delay.
+
+Exit the Program
+
+
+
+Command: "exit" or "quit"
+
+Example: "exit"
+
+Action: Terminates the application.
+
+Default Response for Unknown Commands
+
+
+Command: Any command that does not match the predefined ones.
+
+Example: "play music"
+
+Action: Responds with a default message indicating the command is not recognized.
+
+Additional Information
+
+
+Search Command:
+
+
+
+If you say "search <query>", JARVIS will open Google with the search term provided.
+
+Example: "search latest news" will open Google and search for the latest news.
+
+YouTube Command:
+
+Saying "open YouTube" will open the YouTube website in your default browser.
+
+Example: "open YouTube" will launch YouTube.
+
+
+Time Command:
+
+
+Saying "time" will prompt JARVIS to announce the current time.
+
+
+Example: "what time is it now" will result in JARVIS stating the current time.
+
+Exit Command:
+
+
+Saying "exit" or "quit" will close the JARVIS application.
+
+Example: "quit" will terminate the application.
+
+
+Feel free to use these commands to interact with JARVIS and test its various functionalities!
 
 
 
