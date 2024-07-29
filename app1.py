@@ -99,11 +99,17 @@ if __name__ == "__main__":
 
 
 """Code Analysis
+
+
+Code Analysis
+
+
 1. Initialization
 
 nlp: Loads the English language model from SpaCy for Natural Language Processing (NLP).
 recognizer: Initializes the speech recognizer.
 tts_engine: Initializes the text-to-speech engine.
+
 2. Greetings
 
 A list of greetings is randomly selected and spoken when the application starts.
@@ -118,37 +124,61 @@ speak_text: Converts text to speech and speaks it out loud.
 
 handle_command: Processes the recognized text and performs actions based on specific commands.
 
+
+
+
+
+
 Voice Commands and Corresponding Actions
+
+
 1. Search Command
 
 Trigger: "search <query>"
 Example: If you say "search Python programming", the application will open Google and search for "Python programming".
 Code Handling: The text is parsed to extract the query, which is then used to construct a Google search URL.
+
+
 2. YouTube Command
 
 Trigger: "open YouTube" or "open youtube"
 Example: If you say "open YouTube", the application will open YouTube in the default web browser.
 Code Handling: Opens the YouTube website.
+
+
 3. Time Command
 
 Trigger: "time"
 Example: If you say "what time is it", the application will respond with the current time.
 Code Handling: Retrieves the current time using the datetime module and speaks it out.
+
+
+
 4. Joke Command
 
 Trigger: "tell me a joke"
 Example: If you say "tell me a joke", the application will respond with a random joke.
 Code Handling: Fetches a random joke using the pyjokes library and speaks it out.
+
+
+
 5. Reminder Command
 
 Trigger: "set reminder"
 Example: If you say "set a reminder", the application sets a reminder for 10 seconds (hardcoded) and then speaks the reminder message.
 Code Handling: Uses threading to wait for the specified time and then speaks the reminder message.
+
+
+
+
 6. Exit Command
 
 Trigger: "exit" or "quit"
 Example: If you say "exit" or "quit", the application will terminate.
 Code Handling: Exits the application by calling exit().
+
+
+
 7. Default Response
 
 Trigger: Any command that does not match the predefined commands.
