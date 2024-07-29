@@ -128,8 +128,13 @@ Feel free to use these commands to interact with JARVIS and test its various fun
 
 
 
+
+
+
 Contributing
 This is an ongoing project, and contributions are welcome! You can help by:
+
+
 
 Adding new features
 Improving existing functionalities
@@ -137,8 +142,12 @@ Reporting bugs
 Enhancing the codebase
 Feel free to submit a pull request or open an issue if you have suggestions or improvements.
 
+
+
+
+
 Feedback
 Your feedback is valuable to us. If you have any comments, suggestions, or issues, please reach out to us at soumikparida12345@gmail.com.
 
-Conclusion
+
 JARVIS is a versatile personal assistant with various functionalities, and it's continuously evolving. We encourage you to explore, contribute, and make it better. Thank you for being a part of this open-source project!
